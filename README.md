@@ -3,6 +3,8 @@
 An immersive, futuristic portfolio experience designed as a **digital brain interface**.  
 Instead of scrolling through a traditional resume site, visitors navigate interconnected mind regions that represent technical depth, creativity, growth, and long-term AI vision.
 
+Live Link: https://explore-my-mind.vercel.app/
+
 ## Project Concept
 
 `Explore My Mind` is built to feel like entering an intelligent system:
