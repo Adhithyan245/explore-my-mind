@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Explore My Mind
 
-## Getting Started
+An immersive, futuristic portfolio experience designed as a **digital brain interface**.  
+Instead of scrolling through a traditional resume site, visitors navigate interconnected mind regions that represent technical depth, creativity, growth, and long-term AI vision.
 
-First, run the development server:
+## Project Concept
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+`Explore My Mind` is built to feel like entering an intelligent system:
+
+- **Logic Core** for projects and engineering mindset
+- **Creative Cortex** for experimentation and idea generation
+- **Skill Matrix** for structured technical strengths
+- **Memory Vault** for education, experience, and leadership timeline
+- **Future Vision** for mission and long-term direction
+- **AI Core** as a premium conversational layer prepared for backend integration
+
+## Inspiration
+
+The project is inspired by the intersection of:
+
+- AI systems and autonomous decision-making
+- Robotics and real-world intelligence
+- Cinematic, high-end interface design
+- The idea that a portfolio can feel like a product experience, not a static document
+
+## Key Features
+
+- Immersive neural navigation map with interactive region nodes
+- Distinct visual identity per region while preserving one cohesive design system
+- Data-driven content architecture for easy customization
+- Motion-rich UI with controlled, professional microinteractions
+- Accessibility-aware interactions (focus states, smooth discovery flow)
+- Frontend-first AI Core placeholder with prompt chips and conversational preview
+- Vercel-friendly architecture with no required paid services
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Deployment:** Vercel Hobby
+
+## Folder Structure Overview
+
+```text
+app/           # Routes, pages, layout, loading, route transitions
+components/    # Reusable UI modules and interactive sections
+data/          # Structured editable content (projects, skills, memory, AI prompts)
+lib/           # UI/system utilities (visual tokens, motion config, identities)
+public/        # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Install dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+2. Start the development server:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Open:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```text
+   http://localhost:3000
+   ```
 
-## Deploy on Vercel
+4. Optional quality checks:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run lint
+   npm run build
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy on Vercel (Hobby)
+
+1. Push this project to a GitHub repository.
+2. Go to [Vercel](https://vercel.com) and create a new project.
+3. Import the GitHub repository.
+4. Keep defaults (Next.js is auto-detected).
+5. Click **Deploy**.
+
+No environment variables are required for the current frontend-only version.
+
+## Customize Portfolio Content
+
+Most portfolio updates are content-only edits in `data/`:
+
+- `data/personal.ts` - name, tagline, intro
+- `data/hero.ts` - homepage headline, subtitle, CTAs
+- `data/regions.ts` - region summaries, focus areas, highlights
+- `data/sectionDescriptions.ts` - section intro/detail copy
+- `data/projects.ts` - Logic Core project cards
+- `data/skills.ts` - Skill Matrix categories and items
+- `data/education.ts` - education entries
+- `data/experience.ts` - experience entries
+- `data/leadership.ts` - leadership entries
+- `data/futureGoals.ts` - mission, interests, long-term direction
+- `data/aiCore.ts` - AI Core intro, prompts, response placeholders
+- `data/links.ts` - GitHub and LinkedIn URLs
+
+## AI Core Roadmap
+
+Current AI Core is frontend-first by design. Planned next steps:
+
+1. Add a secure backend API route for real model inference
+2. Connect prompt handling to LLM providers (OpenAI/Anthropic/Gemini)
+3. Introduce context retrieval from portfolio data for grounded answers
+4. Add conversation memory and personalization
+5. Add rate limiting and observability for production reliability
+
+---
+
+Built to present technical ambition, creative clarity, and real-world AI/robotics direction in one cohesive experience.
